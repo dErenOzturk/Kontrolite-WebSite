@@ -1,0 +1,2079 @@
+/* This website was created by Dursun Eren ÖZTÜRK on behalf of Kontrolite */
+/* 2024 Kontrolite - All right reserved */
+
+/*----------------------------------------*/
+/*     Instagram: @dursunerenozturk       */
+/*   E-mail: dursunerenozturk@gmail.com   */
+/*----------------------------------------*/
+
+/************ CSS İÇERİKLERİ ***************
+
+  01. THEME DEFAULT
+	02. BUTON
+  03. PRELOADER
+	04. SCROLL-TOP
+	05. MOBILE SIDEBAR
+	06. MEANMENU
+	07. HEADER
+	08. HERO
+  09. ABOUT
+  10. FEATURE
+  11. SERVICE
+  12. HİZMET DETAY
+  13. KULLANDIĞIMIZ TEKNOLOJİLER
+  14. REFERENCES
+  15. CONTACT
+  16. WHO-WE-ARE
+  17. VISION
+  18. MISSION
+	19. Footer CSS START
+
+**********************************************/
+
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #62637d;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* body::-webkit-scrollbar-track {
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+} */
+
+body::-webkit-scrollbar-thumb {
+  /* border-radius: 8px; */
+  background-color: #ef4136;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #141774;
+  margin-top: 0px;
+  font-weight: 700;
+  line-height: 1.1;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: #221f20;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.z-index-3 {
+  position: relative;
+  z-index: 3;
+}
+
+.z-index-4 {
+  position: relative;
+  z-index: 4;
+}
+
+.z-index-5 {
+  position: relative;
+  z-index: 5;
+}
+
+.z-index-6 {
+  position: relative;
+  z-index: 6;
+}
+
+a,
+.btn,
+button,
+input,
+select,
+textarea,
+li,
+img,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+li {
+  list-style: none;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+input,
+textarea {
+  outline: none;
+  color: #141774;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #747474;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #747474;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #747474;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #747474;
+}
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* Metin seçildiği zaman arka plan rengi */
+*::-moz-selection {
+  background: #ef4136;
+  color: #221f20;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #ef4136;
+  color: #221f20;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ef4136;
+  color: #221f20;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #ef4136;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #ef4136;
+  opacity: 1;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+/*----------------------------------------*/
+/*   02. BUTON CSS START
+/*----------------------------------------*/
+.buton {
+  display: inline-block;
+  background-color: #221f20;
+  color: #ffffff;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  padding: 0 35px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .buton {
+    padding: 0 30px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .buton {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
+
+.buton:before {
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #ef4136;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.buton:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  color: #ffffff;
+}
+
+.buton:hover span {
+  color: #ffffff;
+}
+
+.buton span {
+  z-index: 1;
+  position: relative;
+}
+
+/*----------------------------------------*/
+/*   03. PRELOADER START
+/*----------------------------------------*/
+@keyframes preloader {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes preloader {
+  0% {
+    -webkit-transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes icon-bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7f7f7;
+  z-index: 999999;
+}
+
+.preloader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  padding: 0px;
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.preloader span {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #ef4136;
+  -webkit-animation: preloader 1.3s linear infinite;
+  animation: preloader 1.3s linear infinite;
+}
+
+.preloader span:last-child {
+  animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+}
+
+/*----------------------------------------*/
+/*   04. SCROLL-TOP START
+/*----------------------------------------*/
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: -10%;
+  right: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 999;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  background: #ef4136;
+  transition: 0.5s ease;
+  border: none;
+}
+
+.scroll-top.open {
+  bottom: 30px;
+}
+
+/*----------------------------------------*/
+/*  05. MOBILE SIDEBAR START 
+/*----------------------------------------*/
+
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 24, 24, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.45s ease-in-out;
+}
+
+.body-overlay.apply {
+  opacity: 1;
+  visibility: visible;
+}
+
+.body-overlay:hover {
+  cursor: url(../img/cross-out.png), pointer;
+}
+
+.mobile-sidebar {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 480px;
+  bottom: 0;
+  box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
+  background-color: #221f20;
+  z-index: 9999;
+  padding: 50px;
+  scrollbar-width: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.45s ease-in-out;
+  overflow-y: scroll;
+}
+
+.mobile-sidebar.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 767px) {
+  .mobile-sidebar {
+    width: 300px;
+    padding: 40px 35px;
+  }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .mobile-sidebar {
+    width: 400px;
+    padding: 40px;
+  }
+}
+
+.mobile-sidebar.opened {
+  right: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-duration: 0.6s;
+}
+
+.mobile-sidebar__logo {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px),
+  only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-sidebar__logo {
+    padding-top: 0;
+  }
+}
+
+.mobile-sidebar__logo img {
+  width: 157px;
+  height: 100%;
+}
+
+.mobile-sidebar__close-btn button {
+  font-size: 35px;
+  color: white;
+  position: absolute;
+  right: 50px;
+  top: 42px;
+  transition: 1s;
+  font-weight: 300;
+  opacity: 0.2;
+  -webkit-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-duration: 0.3s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-sidebar__close-btn button {
+    font-size: 28px;
+    right: 48px;
+    top: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-sidebar__close-btn button {
+    font-size: 28px;
+    right: 39px;
+    top: 38px;
+  }
+}
+
+.mobile-sidebar__close-btn button:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.mobile-sidebar__social {
+  margin-top: 50px;
+}
+.mobile-sidebar__social .social-icon a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #221f20;
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  .mobile-sidebar__social .social-icon a {
+    width: 40px;
+    height: auto;
+  }
+}
+
+.mobile-sidebar__social .social-icon a:hover {
+  background-color: #ef4136;
+  color: #ffffff;
+}
+
+.mobile-sidebar__info {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.mobile-sidebar__info .offcanva-title {
+  color: white;
+  margin: 30px 0 40px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.mobile-sidebar__info-icon a {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: #221f20;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.mobile-sidebar__info-icon a:hover {
+  color: white;
+  background-color: #ef4136;
+}
+
+.mobile-sidebar__info-address span {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.mobile-sidebar__info-address a {
+  display: block;
+  color: rgba(255, 255, 255, 0.524);
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .mobile-sidebar__info-address a {
+    font-size: 16px;
+  }
+}
+.mobile-sidebar__info-address a:hover {
+  color: #ef4136;
+}
+
+.mobile-menu.mean-container {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  color: #221f20;
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 31px;
+  }
+  .section-title br {
+    display: none;
+  }
+}
+
+/*----------------------------------------*/
+/*  06. MEANMENU CSS START
+/*----------------------------------------*/
+.mobile-menu.mean-container {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .mobile-menu.mean-container {
+    margin-bottom: 30px;
+  }
+}
+
+.mean-container a.meanmenu-reveal {
+  display: none;
+}
+
+.mean-container .mean-nav {
+  background: none;
+  margin-top: 0;
+}
+
+.mean-container .mean-bar {
+  padding: 0;
+  min-height: auto;
+  background: none;
+}
+
+.mean-container .mean-nav > ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  display: block !important;
+}
+
+.mean-container a.meanmenu-reveal {
+  display: none !important;
+}
+
+.mean-container .mean-nav ul li a {
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.mean-container .mean-nav ul li a:hover {
+  color: #ef4136;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 10px;
+  padding: 0 !important;
+  line-height: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  color: #fff;
+  line-height: 30px;
+  top: 0;
+  font-weight: 400;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  color: #017efa;
+  border-color: #888888;
+}
+
+.mean-container .mean-nav ul li > a > i {
+  display: none;
+}
+
+.mean-container .mean-nav ul li > a.mean-expand i {
+  display: inline-block;
+}
+
+.mean-container .mean-nav > ul > li:first-child > a {
+  border-top: 0;
+}
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked {
+  color: #017efa;
+}
+
+.mean-container .mean-nav ul li a.mean-expand.mean-clicked i {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  color: #ffffff;
+}
+
+/*----------------------------------------*/
+/*  07. HEADER START
+/*----------------------------------------*/
+.header__space {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 10px black;
+  background-color: #221f20;
+}
+
+@media only screen and (min-width: 1400px) {
+  .header__space {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.header-logo {
+  max-width: 150px;
+  height: 30px;
+  transition: transform 1.5s ease-in-out;
+  margin-right: -5px;
+}
+
+.logoK {
+  margin-right: 1px;
+}
+
+.col-xl-2:hover .logoK {
+  transform: rotate(360deg) scale(1.3);
+}
+
+.header__main-menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header__main-menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header__main-menu ul li {
+    margin: 0 15px;
+  }
+}
+
+.header__main-menu ul li a {
+  padding: 35px 0;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+
+.header__main-menu ul li:hover a {
+  color: #ef4136;
+}
+
+/* Dropdown Menüler */
+.header__main-menu ul li .dropdown,
+.language-selector .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #221f20;
+  box-shadow: 0px 0px 10px #221f20;
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  .header__main-menu ul li .dropdown,
+  .language-selector .dropdown {
+    position: relative;
+  }
+}
+
+.header__main-menu ul li .dropdown li,
+.language-selector .dropdown li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header__main-menu ul li .dropdown li a,
+.language-selector .dropdown li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+.header__main-menu ul li.has-dropdown:hover .dropdown,
+.language-selector:hover .dropdown {
+  display: block;
+}
+
+.header__main-menu ul li .dropdown li a:hover,
+.language-selector .dropdown li a:hover {
+  background-color: #ef4136;
+  color: #ffffff;
+}
+
+.language-selector img {
+  height: 25px;
+  width: 40px;
+}
+
+.language-selector .dropdown li a:hover img {
+  filter: brightness(1.2);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__bars {
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: #221f20;
+  transition: 0.3s;
+}
+
+.header__bars:hover {
+  background-color: #ef4136;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  .header__bars {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+}
+
+/*----------------------------------------*/
+/*  08. HERO CSS START
+/*----------------------------------------*/
+#background-image {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  opacity: 0.1;
+  transform: translate(-50%, -50%); /* Elemanı ortalamak için */
+}
+
+.hero__bg {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+
+@media (min-width: 767px){
+  .hero__bg{
+    height: 900px;
+  }
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 40px;
+  color: #221f20;
+}
+
+/* HOME LOGO */
+
+.hero__thumb {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure vertical stacking */
+  position: relative;
+}
+
+#floating-sphere {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 40%,
+    rgb(190, 190, 190) 70%,
+    rgba(150, 150, 150, 1) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+}
+
+#logo {
+  width: 200px;
+}
+
+#logo-shadow {
+  width: 150px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute; /* Position it relative to the parent container */
+  top: 330px; /* Position below the sphere */
+  z-index: 0;
+  animation: shadow-move 3s ease-in-out infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+/* Shadow animation */
+@keyframes shadow-move {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.2;
+  }
+}
+
+/*----------------------------------------*/
+/*  09. ABOUT CSS START
+/*----------------------------------------*/
+
+.about-inner__area .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -10px; /* Kenar boşluklarını azalt */
+}
+
+.about-inner__thumb,
+.about-inner__content {
+  padding: 0 10px; /* İç kenar boşluklarını azalt */
+}
+
+.about-inner__thumb img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 5px; /* Köşeleri yuvarla */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti ekle */
+}
+
+.about-inner__content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8; /* Satır aralığını artır */
+  color: #333333;
+}
+
+@media only screen and (max-width: 1199px) {
+  .about-inner__content p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about-inner__content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-inner__thumb,
+  .about-inner__content {
+    padding: 0 8px;
+  }
+
+  .about-inner__content p {
+    font-size: 14px;
+  }
+}
+
+.contact-form {
+  background-color: #e8f6ff;
+  border-radius: 20px;
+  padding: 80px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact-form {
+    padding: 30px;
+  }
+}
+
+/*----------------------------------------*/
+/*  10. FEATURE CSS START
+/*----------------------------------------*/
+
+/* .feature__item {
+  padding: 40px 55px;
+  border-radius: 10px;
+  border: 1px dashed;
+  border-image-source: linear-gradient(to bottom, #ef4136, #221f20);
+  border-image-slice: 1;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 460px;
+  min-height: 400px;
+} */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .feature__item {
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .feature__item {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .feature__item {
+    padding: 30px 20px;
+  }
+}
+
+.feature__item:hover .feature__icon {
+  animation: icon-bounce 0.8s 1;
+}
+
+.feature__icon {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+
+.feature__icon img {
+  height: 88px;
+  width: auto;
+}
+
+.feature__content {
+  z-index: 5;
+  position: relative;
+}
+
+.feature__content p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.feature__title-sm {
+  color: #221f20;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.feature__title-sm:hover {
+  color: #ef4136;
+}
+
+/*----------------------------------------*/
+/*  11. SERVICE CSS Start */
+/*----------------------------------------*/
+
+.service__section-wrapper {
+  justify-content: space-between;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .service__section-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+/* Service title */
+.service__title {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #221f20;
+}
+@media (max-width: 991px) {
+  .service__title {
+    font-size: 32px;
+  }
+}
+
+/* Service icon */
+.service__icon {
+  margin-bottom: 40px;
+}
+.service__icon img {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* Resme hafif bir zoom animasyonu ekle */
+}
+
+.service__item:hover .service__icon img {
+  transform: scale(1.1); /* Hover durumunda resmi büyüt */
+}
+
+/* Service title small */
+.service__title-sm {
+  color: #221f20;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 30px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.service__title-sm:hover {
+  color: #ef4136; /* Hover durumda renk değişimi */
+}
+
+/* Service content */
+.service__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444444;
+}
+
+.service__button {
+  display: inline-block;
+  font-size: 24px;
+  color: #221f20; /* İkonun başlangıç rengi */
+  transition: transform 1s ease, color 0.8s ease; /* Animasyonlar */
+}
+
+.service__button:hover {
+  color: #ef4136; /* Hover durumunda renk değişimi */
+  transform: rotate(360deg) scale(1.25); /* Döndürme ve büyütme animasyonu */
+}
+
+.service__item {
+  min-width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .service__item {
+    min-width: 100%;
+  }
+}
+
+/* SERVICE SLIDER START */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.service__slider::before,
+.service__slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 20%
+  );
+}
+
+.service__slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service__slide:hover img {
+  transform: scale(1.1); /* Hover durumunda resmi büyüt */
+}
+
+.service__slider::before,
+.service__slider::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+}
+
+.service__slider::before {
+  left: 0;
+  top: 0;
+}
+
+.service__slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.service__slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  width: calc((100% / 4) * 12);
+}
+
+.service__slide {
+  width: calc(100% / 4);
+}
+
+@media (max-width: 767px) {
+  .service__slide-track {
+    width: calc((100% / 3) * 12);
+  }
+
+  .service__slide {
+    width: calc(100% / 3);
+  }
+}
+
+/*----------------------------------------*/
+/*  12. HİZMET DETAY START
+/*----------------------------------------*/
+
+.service-details img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.service-detail-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-projects .featured-projects {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.project-item {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.btn-primary {
+  background-color: #ef4136;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d93832;
+}
+
+/*--------------------------------------------------*/
+/*  13. KULLANDIĞIMIZ TEKNOLOJİLER CSS START
+/*--------------------------------------------------*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.integration__bg {
+  position: relative;
+  z-index: 99;
+}
+
+.integration__title-box .section-title {
+  margin-bottom: 40px;
+}
+
+.tech__icon span {
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 21px 40px rgba(31, 60, 80, 0.05);
+  transition: all 0.5s ease-in-out;
+}
+
+.tech__icon span:hover {
+  transform: scale(1.25);
+}
+
+.tech__icon.int-icon-1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.tech__icon.int-icon-2 {
+  position: absolute;
+  top: 23%;
+  left: 31%;
+}
+.tech__icon.int-icon-3 {
+  position: absolute;
+  top: 60%;
+  left: 31%;
+}
+.tech__icon.int-icon-4 {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+}
+.tech__icon.int-icon-5 {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.tech__icon.int-icon-6 {
+  position: absolute;
+  top: 54%;
+  right: 33%;
+}
+.tech__icon.int-icon-7 {
+  position: absolute;
+  top: 27%;
+  right: 33%;
+}
+
+.techSlider {
+  background-color: whitesmoke;
+  padding: 4em 2em;
+  overflow: hidden;
+  position: relative;
+}
+
+.techSlide-track {
+  display: flex;
+  width: calc(
+    250px * 14
+  ); /* Width based on number of logos including duplicates */
+  animation: scroll 8s linear infinite; /* Adjust duration for smoothness */
+}
+
+.techSlide {
+  flex: 0 0 250px; /* Width of each slide */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techSlide img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.mobile-view {
+  display: none;
+}
+
+.desktop-view {
+  display: block;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-view {
+    display: block;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+}
+
+/*----------------------------------------*/
+/*  14. REFERENCES CSS START
+/*----------------------------------------*/
+
+.references__img {
+  margin-bottom: 35px;
+}
+
+.references__title {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .references__title {
+    font-size: 18px;
+  }
+}
+
+.references__title a {
+  color: #221f20;
+  display: inline;
+  background-size: 0% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.references__title a:hover {
+  background-size: 0% 1px, 100% 1px;
+  color: #ef4136;
+}
+
+.references__content {
+  padding-bottom: 20px;
+}
+
+/*----------------------------------------*/
+/*  15. CONTACT CSS START
+/*----------------------------------------*/
+
+.contact-title {
+  color: #221f20;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+  .contact-title {
+    font-size: 31px;
+  }
+}
+
+.contact-form .input {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-form .input {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-form .input input {
+  width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.contact-form .input input:focus {
+  border: 1px solid #017efa;
+}
+
+.contact-form .textarea {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .contact-form .textarea {
+    margin-bottom: 10px;
+  }
+}
+
+.contact-form .textarea textarea {
+  width: 100%;
+  height: 180px;
+  padding: 15px 20px;
+  border: 1px solid transparent;
+  outline: 0;
+  resize: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contact-form .textarea textarea:focus {
+  border: 1px solid #017efa;
+}
+
+.contact-input input {
+  width: 100%;
+  height: 60px;
+  font-size: 15px;
+  color: #141774;
+  border: 1px solid;
+  background-color: #221f1f0f;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.contact-input input:focus {
+  border: 1px solid blue;
+}
+
+.contact-input input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.contact-input textarea {
+  width: 100%;
+  height: 170px;
+  resize: none;
+  background-color: #221f200f;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  color: #141774;
+  padding: 20px;
+}
+
+.contact-input textarea:focus {
+  border: 1px solid blue;
+}
+
+.contact-input textarea::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.contact-info {
+  padding: 40px;
+  border-radius: 10px;
+  min-height: 275px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-info {
+    padding: 30px 20px;
+  }
+}
+
+.contact-info .contact-icon {
+  color: #221f20;
+  height: 60px;
+  width: 60px;
+  border: 1px solid #221f20;
+  text-align: center;
+  line-height: 60px;
+  color: #017efa;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-info .contact-icon i {
+  color: #ef4136;
+}
+
+/*----------------------------------------*/
+/*  16. WHO-WE-ARE CSS START
+/*----------------------------------------*/
+.about-us {
+  background-color: #f8f9fa;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.about-us__team img {
+  width: 100%; /* Fotoğrafın genişliğini konteynerin genişliğine ayarla */
+  height: 250px; /* Sabit bir yükseklik belirle */
+  object-fit: cover; /* Fotoğrafın orantısını koruyarak, konteyneri doldurmasını sağlar */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-us__image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.about-us__content {
+  text-align: left;
+}
+
+.about-us__title {
+  font-size: 36px;
+  color: #221f20;
+  margin-bottom: 20px;
+}
+
+.about-us__details,
+.about-us__values {
+  margin-bottom: 30px;
+}
+
+.about-us__title-sm {
+  font-size: 28px;
+  color: #221f20;
+  margin-bottom: 20px;
+}
+
+.about-us__values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-us__values li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.about-us__values li i {
+  color: #ef4136;
+  margin-right: 10px;
+}
+
+.about-us__stat {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-us__stat h4 {
+  font-size: 48px;
+  color: #ef4136;
+  margin-bottom: 10px;
+}
+
+.about-us__stat p {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.about-us__team {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about-us__team img {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.about-us__team:hover img {
+  transform: scale(1.05);
+}
+
+.about-us__team-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.about-us__team:hover .about-us__team-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-us__team h4 {
+  font-size: 20px;
+  color: #221f20;
+  margin-bottom: 5px;
+}
+
+.about-us__team p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.about-us__team-social a {
+  color: #221f20;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.about-us__team-social a:hover {
+  color: #ef4136;
+}
+
+/*----------------------------------------*/
+/*  17. VISION CSS START
+/*----------------------------------------*/
+.vision {
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  position: relative;
+}
+
+.vision::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.334); /* Arka plan görseline karartma efekti */
+  z-index: 1;
+}
+
+.vision .container {
+  position: relative;
+  z-index: 2;
+}
+
+.vision-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 300px; /* Sabit yükseklik */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriği yukarıdan aşağıya doğru dengeler */
+}
+
+.vision-card__icon {
+  font-size: 40px;
+  color: #ef4136;
+  margin-bottom: 20px;
+}
+
+.vision-card h4 {
+  font-size: 22px;
+  color: #221f20;
+  margin-bottom: 10px;
+}
+
+.vision-card p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Metin alanının esnemesini sağlar */
+  overflow: hidden; /* Taşan metinleri gizler */
+  text-overflow: ellipsis; /* Uzun metinlerin sonunda üç nokta gösterir */
+  display: -webkit-box; /* Çok satırlı ellipsis için gerekli */
+  -webkit-box-orient: vertical;
+}
+
+.vision-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------*/
+/*  18. MISSION CSS START
+/*----------------------------------------*/
+.mission {
+  background-size: cover;
+  background-position: center;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Arka plan görseline karartma efekti */
+  z-index: 1;
+}
+
+.mission .container {
+  position: relative;
+  z-index: 2;
+}
+
+.mission-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px; /* Sabit yükseklik */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mission-card__icon {
+  font-size: 40px;
+  color: #ef4136;
+  margin-bottom: 20px;
+}
+
+.mission-card h4 {
+  font-size: 22px;
+  color: #221f20;
+  margin-bottom: 10px;
+}
+
+.mission-card p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------*/
+/* 19. Footer CSS START
+/*----------------------------------------*/
+.footer__content .section-title {
+  margin-bottom: 30px;
+}
+
+.footer__area {
+  background-color: #221f20;
+  box-shadow: 0px 0px 10px black;
+}
+
+.footer__content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-bottom__border-top {
+  border-top: 1px solid #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-bottom__border-top {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-bottom__logo {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-bottom__social ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-bottom__social ul li:first-child {
+  margin-left: 0;
+}
+
+.footer-bottom__social ul li a {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: #221f20;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .footer-bottom__social ul li a {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.footer-bottom__social ul li a:hover {
+  background-color: #ef4136;
+}
+
+.footer-bottom__area {
+  color: #ffffff;
+}
+
+/* CSS END */
+/* DURSUN EREN ÖZTÜRK */
